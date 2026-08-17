@@ -14,13 +14,13 @@ Think of it like a **waiter in a restaurant**:
 In web development, APIs typically follow the **REST** (Representational State Transfer) pattern, where the client sends HTTP requests and the server responds with data (usually JSON).
 
 ### Common HTTP Methods:
-| Method   | Purpose              | Express.js Equivalent |
-|----------|----------------------|-----------------------|
-| `GET`    | Retrieve data        | `app.get()`           |
-| `POST`   | Create new data      | `app.post()`          |
-| `PUT`    | Update existing data | `app.put()`           |
-| `DELETE` | Remove data          | `app.delete()`        |
-| `PATCH`  | Partial update       | `app.patch()`         |
+| Method   | Purpose              |
+|----------|----------------------|
+| `GET`    | Retrieve data        |
+| `POST`   | Create new data      |
+| `PUT`    | Update existing data |
+| `DELETE` | Remove data          |
+| `PATCH`  | Partial update       |
 
 ---
 
@@ -42,7 +42,7 @@ It was created by **Sebastián Ramírez** and first released in **2018**.
 
 | Feature                         | Details                                                                 |
 |---------------------------------|-------------------------------------------------------------------------|
-| ⚡ **High Performance**          | One of the fastest Python frameworks — on par with Node.js and Go      |
+| ⚡ **High Performance**          | One of the fastest Python frameworks available                          |
 | 🔍 **Automatic Docs**           | Swagger UI at `/docs`, ReDoc at `/redoc` — generated automatically      |
 | ✅ **Built-in Validation**      | Request & response validation via Pydantic — no extra libraries needed  |
 | 🔒 **Type Safety**              | Python type hints enforce correct data types at runtime                 |
@@ -66,12 +66,6 @@ It was created by **Sebastián Ramírez** and first released in **2018**.
 | **Learning Curve**       | 📘 Easy–Medium        | 📗 Easy                 | 📕 Steep                     |
 | **Best For**             | REST APIs, microservices | Simple apps, APIs   | Full web apps, admin panels |
 
-### If You're Coming from Node.js/Express:
-FastAPI feels very similar to Express:
-- **Routes** → same concept, just with decorators (`@app.get("/path")`)
-- **Middleware** → same concept, built into Starlette
-- **Request/Response** → similar, but with automatic type validation
-- **Async** → `async def` instead of `async (req, res) => {}`
 
 ---
 
