@@ -54,10 +54,10 @@ FastAPI/
 │
 │   ── Session 1: Basics + CRUD ──
 ├── 1_intro/                           ✅ Intro, What is API/FastAPI, Setup
-├── 2_routes_and_params/               ⬜ Routes, Path Params, Query Params
-├── 3_request_body_pydantic/           ⬜ Request Body, Pydantic Validation
-├── 4_todo_crud/                       ⬜ CRUD To-Do Project
-├── 5_response_models/                 ⬜ Response Models, Sensitive Data
+├── 2_routes_and_params/               ✅ Routes, Path Params, Query Params
+├── 3_request_body_pydantic/           ✅ Request Body, Pydantic Validation
+├── 4_todo_crud/                       ✅ CRUD To-Do Project
+├── 5_response_models/                 ✅ Response Models, Sensitive Data
 │
 │   ── Session 2: DB + Auth ──
 ├── 6_status_codes_errors/             ⬜ Status Codes, Exception Handling
