@@ -3,6 +3,7 @@ from typing import Optional
 
 app = FastAPI()
 
+
 # Basic Routes
 
 @app.get("/")
@@ -28,7 +29,6 @@ def contact():
 
 # Path Parameters
 
-
 # fixed route must come before dynamic route
 
 @app.get("/users/me")
@@ -42,7 +42,7 @@ def get_current_user():
 def get_user(user_id: int):
     return {
         "user_id": user_id
-        }
+    }
 
 
 @app.get("/items/{item_id}")
@@ -51,7 +51,6 @@ def get_item(item_id: int):
 
 
 # Query Parameters
-
 
 @app.get("/products")
 def get_products(
