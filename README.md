@@ -18,7 +18,7 @@ A structured, topic-by-topic FastAPI learning journey.
 | 2 | [`2_routes_and_params`](./2_routes_and_params/) | Routes, Path Params, Query Params | ✅ Done |
 | 3 | [`3_request_body_pydantic`](./3_request_body_pydantic/) | Request Body, Pydantic Models, Nested Models | ✅ Done |
 | 4 | [`4_todo_crud`](./4_todo_crud/) | CRUD To-Do Project (GET, POST, PUT, DELETE) | ✅ Done |
-| 5 | [`5_response_models`](./5_response_models/) | Response Models, Hiding Sensitive Data | ⬜ Pending |
+| 5 | [`5_response_models`](./5_response_models/) | Response Models, Hiding Sensitive Data | ✅ Done |
 
 ### 🗄️ Session 2 — DB + Auth
 
