@@ -1,6 +1,8 @@
-# 📌 Module 6 — Status Codes, Custom Responses & Error Handling
+# 📌 Module 6 — Status Codes & Custom Responses
 
 ---
+
+> **Note:** Basic `HTTPException` is covered here. For custom exceptions & global error handlers, see [Module 7 — Exception Handling](../7_exception_handling/).
 
 ## 📊 HTTP Status Codes
 

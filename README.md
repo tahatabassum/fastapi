@@ -23,26 +23,27 @@ A structured, topic-by-topic FastAPI learning journey.
 ### 🗄️ Session 2 — DB + Auth
 
 | # | Folder | Topic | Status |
-|---|--------|-------|--------|
-| 6 | [`6_status_codes_errors`](./6_status_codes_errors/) | Status Codes, Custom Responses, Exception Handling | ✅ Done |
-| 7 | [`7_dependency_injection`](./7_dependency_injection/) | Dependency Injection & Reusable Logic | ⬜ Pending |
-| 8 | [`8_middleware`](./8_middleware/) | Middleware | ⬜ Pending |
-| 9 | [`9_database_sqlalchemy`](./9_database_sqlalchemy/) | DB Integration, SQLAlchemy ORM | ⬜ Pending |
-| 10 | [`10_crud_with_db`](./10_crud_with_db/) | CRUD API with Database | ⬜ Pending |
-| 11 | [`11_async_await`](./11_async_await/) | Asynchronous Programming (Async/Await) | ⬜ Pending |
-| 12 | [`12_auth_jwt`](./12_auth_jwt/) | JWT Auth, OAuth2, Password Hashing | ⬜ Pending |
-| 13 | [`13_file_uploads`](./13_file_uploads/) | File Uploads & Static Files | ⬜ Pending |
+|---|--------|-------|---------|
+| 6 | [`6_status_codes_errors`](./6_status_codes_errors/) | Status Codes, Custom Responses | ✅ Done |
+| 7 | [`7_exception_handling`](./7_exception_handling/) | Exception Handling, Custom Exceptions, Global Handlers | ✅ Done |
+| 8 | [`8_dependency_injection`](./8_dependency_injection/) | Dependency Injection & Reusable Logic | ⬜ Pending |
+| 9 | [`9_middleware`](./9_middleware/) | Middleware | ⬜ Pending |
+| 10 | [`10_database_sqlalchemy`](./10_database_sqlalchemy/) | DB Integration, SQLAlchemy ORM | ⬜ Pending |
+| 11 | [`11_crud_with_db`](./11_crud_with_db/) | CRUD API with Database | ⬜ Pending |
+| 12 | [`12_async_await`](./12_async_await/) | Asynchronous Programming (Async/Await) | ⬜ Pending |
+| 13 | [`13_auth_jwt`](./13_auth_jwt/) | JWT Auth, OAuth2, Password Hashing | ⬜ Pending |
+| 14 | [`14_file_uploads`](./14_file_uploads/) | File Uploads & Static Files | ⬜ Pending |
 
 ### 🚀 Session 3 — Production + Project
 
 | # | Folder | Topic | Status |
-|---|--------|-------|--------|
-| 14 | [`14_cors_env`](./14_cors_env/) | CORS Handling & Environment Variables | ⬜ Pending |
-| 15 | [`15_testing_pytest`](./15_testing_pytest/) | API Testing with Pytest | ⬜ Pending |
-| 16 | [`16_third_party_webcrawling`](./16_third_party_webcrawling/) | Third-Party API Integration & Web Crawling | ⬜ Pending |
-| 17 | [`17_pagination_caching_ratelimit`](./17_pagination_caching_ratelimit/) | Pagination, Caching, Rate Limiting | ⬜ Pending |
-| 18 | [`18_deployment`](./18_deployment/) | Deploying FastAPI to Render | ⬜ Pending |
-| 19 | [`19_blog_api_project`](./19_blog_api_project/) | Real-World Blog API Project | ⬜ Pending |
+|---|--------|-------|---------|
+| 15 | [`15_cors_env`](./15_cors_env/) | CORS Handling & Environment Variables | ⬜ Pending |
+| 16 | [`16_testing_pytest`](./16_testing_pytest/) | API Testing with Pytest | ⬜ Pending |
+| 17 | [`17_third_party_webcrawling`](./17_third_party_webcrawling/) | Third-Party API Integration & Web Crawling | ⬜ Pending |
+| 18 | [`18_pagination_caching_ratelimit`](./18_pagination_caching_ratelimit/) | Pagination, Caching, Rate Limiting | ⬜ Pending |
+| 19 | [`19_deployment`](./19_deployment/) | Deploying FastAPI to Render | ⬜ Pending |
+| 20 | [`20_blog_api_project`](./20_blog_api_project/) | Real-World Blog API Project | ⬜ Pending |
 
 ---
 
@@ -60,22 +61,23 @@ FastAPI/
 ├── 5_response_models/                 ✅ Response Models, Sensitive Data
 │
 │   ── Session 2: DB + Auth ──
-├── 6_status_codes_errors/             ✅ Status Codes, Exception Handling
-├── 7_dependency_injection/            ⬜ Dependency Injection
-├── 8_middleware/                      ⬜ Middleware
-├── 9_database_sqlalchemy/             ⬜ DB + SQLAlchemy ORM
-├── 10_crud_with_db/                   ⬜ CRUD with Real Database
-├── 11_async_await/                    ⬜ Async/Await in FastAPI
-├── 12_auth_jwt/                       ⬜ JWT + OAuth2 + Password Hashing
-├── 13_file_uploads/                   ⬜ File Uploads & Static Files
+├── 6_status_codes_errors/             ✅ Status Codes, Custom Responses
+├── 7_exception_handling/              ✅ Exception Handling, Global Handlers
+├── 8_dependency_injection/            ⬜ Dependency Injection
+├── 9_middleware/                      ⬜ Middleware
+├── 10_database_sqlalchemy/            ⬜ DB + SQLAlchemy ORM
+├── 11_crud_with_db/                   ⬜ CRUD with Real Database
+├── 12_async_await/                    ⬜ Async/Await in FastAPI
+├── 13_auth_jwt/                       ⬜ JWT + OAuth2 + Password Hashing
+├── 14_file_uploads/                   ⬜ File Uploads & Static Files
 │
 │   ── Session 3: Production + Project ──
-├── 14_cors_env/                       ⬜ CORS + Environment Variables
-├── 15_testing_pytest/                 ⬜ API Testing with Pytest
-├── 16_third_party_webcrawling/        ⬜ 3rd Party APIs + Web Crawling
-├── 17_pagination_caching_ratelimit/   ⬜ Pagination, Caching, Rate Limiting
-├── 18_deployment/                     ⬜ Deploy to Render
-└── 19_blog_api_project/               ⬜ Real-World Blog API Project
+├── 15_cors_env/                       ⬜ CORS + Environment Variables
+├── 16_testing_pytest/                 ⬜ API Testing with Pytest
+├── 17_third_party_webcrawling/        ⬜ 3rd Party APIs + Web Crawling
+├── 18_pagination_caching_ratelimit/   ⬜ Pagination, Caching, Rate Limiting
+├── 19_deployment/                     ⬜ Deploy to Render
+└── 20_blog_api_project/               ⬜ Real-World Blog API Project
 ```
 
 ---
