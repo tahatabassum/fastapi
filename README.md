@@ -28,7 +28,7 @@ A structured, topic-by-topic FastAPI learning journey.
 | 7 | [`7_exception_handling`](./7_exception_handling/) | Exception Handling, Custom Exceptions, Global Handlers | ✅ Done |
 | 8 | [`8_dependency_injection`](./8_dependency_injection/) | Dependency Injection & Reusable Logic | ✅ Done |
 | 9 | [`9_middleware`](./9_middleware/) | Middleware | ✅ Done |
-| 10 | [`10_database_sqlalchemy`](./10_database_sqlalchemy/) | DB Integration, SQLAlchemy ORM | ⬜ Pending |
+| 10 | [`10_database_sqlalchemy`](./10_database_sqlalchemy/) | DB Integration, SQLAlchemy ORM | ✅ Done |
 | 11 | [`11_crud_with_db`](./11_crud_with_db/) | CRUD API with Database | ⬜ Pending |
 | 12 | [`12_async_await`](./12_async_await/) | Asynchronous Programming (Async/Await) | ⬜ Pending |
 | 13 | [`13_auth_jwt`](./13_auth_jwt/) | JWT Auth, OAuth2, Password Hashing | ⬜ Pending |
@@ -65,7 +65,7 @@ FastAPI/
 ├── 7_exception_handling/              ✅ Exception Handling, Global Handlers
 ├── 8_dependency_injection/            ✅ Dependency Injection
 ├── 9_middleware/                      ✅ Middleware
-├── 10_database_sqlalchemy/            ⬜ DB + SQLAlchemy ORM
+├── 10_database_sqlalchemy/            ✅ DB + SQLAlchemy ORM
 ├── 11_crud_with_db/                   ⬜ CRUD with Real Database
 ├── 12_async_await/                    ⬜ Async/Await in FastAPI
 ├── 13_auth_jwt/                       ⬜ JWT + OAuth2 + Password Hashing
