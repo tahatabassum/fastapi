@@ -123,4 +123,32 @@ uvicorn main:app --reload
 
 ---
 
+## 🎯 Interview Questions
+
+**Q1. What is a response model in FastAPI?**
+> A response model is a Pydantic model passed to the `response_model=` parameter in a route decorator. It controls exactly what data FastAPI returns to the client, filtering out any fields not defined in the response model.
+
+**Q2. Why would you use a separate model for input and output?**
+> To protect sensitive data. For example, a `UserCreate` model includes a `password` field for input, but the `UserResponse` model used for output doesn't — so the password is never returned to the client even if it's in the object you return.
+
+**Q3. How does FastAPI filter response data using `response_model`?**
+> FastAPI serializes the returned object using the response model's field definitions. Any field in the returned data that is not in the response model is automatically stripped from the response.
+
+**Q4. What does `response_model_exclude_none=True` do?**
+> It removes fields with `None` values from the response. Useful when you have optional fields that aren't set — instead of returning `{"bio": null, "website": null}`, they are simply omitted.
+
+**Q5. What is `response_model_include` and `response_model_exclude`?**
+> These let you include or exclude specific fields from the response without creating a new model. `response_model_include={"name"}` returns only the `name` field. `response_model_exclude={"email"}` returns everything except `email`.
+
+**Q6. What happens if you return extra fields not in the response model?**
+> FastAPI silently filters them out. The extra fields are never sent to the client. This is the core benefit — your internal data and external API response are cleanly separated.
+
+**Q7. How do you define a response model for a list of items?**
+> Wrap the model with `List[]` from `typing`: `response_model=List[UserResponse]`. FastAPI will validate and filter each item in the list against the model.
+
+**Q8. Can you set a default HTTP status code for a route in FastAPI?**
+> Yes, using the `status_code` parameter in the decorator: `@app.post("/users", status_code=201)`. This sets the response status code when the route succeeds.
+
+---
+
 *Part of the [FastAPI Learning Repository](https://github.com/tahatabassum/fastapi)*
