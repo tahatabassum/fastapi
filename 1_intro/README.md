@@ -214,4 +214,32 @@ These are generated from the **OpenAPI specification** that FastAPI builds autom
 
 ---
 
+## 🎯 Interview Questions
+
+**Q1. What is FastAPI and what makes it different from Flask and Django?**
+> FastAPI is a modern Python web framework for building APIs. Unlike Flask, it has built-in data validation via Pydantic and auto-generates Swagger docs. Unlike Django, it's lightweight and focused only on APIs, with native async support and much higher performance.
+
+**Q2. What is ASGI and why does FastAPI use it?**
+> ASGI (Asynchronous Server Gateway Interface) is the successor to WSGI. It supports async/await, WebSockets, and long-lived connections. FastAPI uses ASGI (via Starlette) which is why it can handle async code and achieve high performance.
+
+**Q3. What is Uvicorn and why do we need it?**
+> Uvicorn is an ASGI server that runs FastAPI applications. FastAPI itself is just a framework — it needs a server to actually receive and handle HTTP requests. You run it with `uvicorn main:app --reload`.
+
+**Q4. What is the `--reload` flag in uvicorn?**
+> It tells uvicorn to automatically restart the server whenever a code file changes. It's used during development only — never in production.
+
+**Q5. What is Swagger UI and how does FastAPI generate it?**
+> Swagger UI is an interactive API documentation interface available at `/docs`. FastAPI generates it automatically from your route definitions and Pydantic models using the OpenAPI standard — no extra configuration needed.
+
+**Q6. What is the difference between WSGI and ASGI?**
+> WSGI (older) is synchronous — it handles one request at a time per worker. ASGI (newer) supports asynchronous code, meaning a single worker can handle many requests concurrently without blocking.
+
+**Q7. What are Python type hints and why does FastAPI rely on them?**
+> Type hints (e.g., `name: str`, `age: int`) declare the expected data type of a variable or function parameter. FastAPI uses them to automatically validate request data, convert types, and generate API documentation.
+
+**Q8. Why is a virtual environment recommended for FastAPI projects?**
+> A virtual environment isolates your project's dependencies so they don't conflict with other Python projects on your machine. Each project gets its own set of packages at specific versions.
+
+---
+
 *Part of the [FastAPI Learning Repository](https://github.com/tahatabassum/fastapi)*
