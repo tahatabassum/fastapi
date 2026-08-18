@@ -202,4 +202,32 @@ uvicorn main:app --reload
 
 ---
 
+## 🎯 Interview Questions
+
+**Q1. What is a route in FastAPI and how do you define one?**
+> A route is a URL path that your API listens on. You define it using a decorator like `@app.get("/path")` above a function. The decorator sets the HTTP method and path, and the function handles the request and returns a response.
+
+**Q2. What is the difference between a path parameter and a query parameter?**
+> A path parameter is part of the URL itself (e.g., `/users/5`) and is used to identify a specific resource. A query parameter comes after `?` in the URL (e.g., `/products?limit=10`) and is used to filter or customize results.
+
+**Q3. How does FastAPI know if a function parameter is a path param or a query param?**
+> If the parameter name matches a variable in the route path `{variable}`, FastAPI treats it as a path parameter. If it doesn't appear in the path, FastAPI automatically treats it as a query parameter.
+
+**Q4. How do you make a query parameter optional in FastAPI?**
+> Give it a default value. For example `limit: int = 10` makes it optional with a default of 10. Use `Optional[str] = None` to make it fully optional with no value by default.
+
+**Q5. Why does route order matter in FastAPI?**
+> FastAPI matches routes top to bottom. If a dynamic route like `/users/{user_id}` comes before a fixed route like `/users/me`, the fixed route will never be reached because `me` gets captured as `user_id`. Always define fixed routes before dynamic ones.
+
+**Q6. What happens if you pass a wrong type for a path parameter?**
+> FastAPI automatically returns a `422 Unprocessable Entity` error with a clear message. For example, if a route expects `user_id: int` and you pass `/users/abc`, FastAPI rejects it because `abc` is not a valid integer.
+
+**Q7. Can you have both path and query parameters in the same route?**
+> Yes. FastAPI identifies them automatically — parameters in the path `{}` are path params, and the rest are query params. They can all be defined in the same function signature.
+
+**Q8. What HTTP methods does FastAPI support?**
+> FastAPI supports all standard HTTP methods via decorators: `@app.get()`, `@app.post()`, `@app.put()`, `@app.patch()`, `@app.delete()`, `@app.head()`, and `@app.options()`.
+
+---
+
 *Part of the [FastAPI Learning Repository](https://github.com/tahatabassum/fastapi)*
