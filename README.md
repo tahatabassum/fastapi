@@ -24,7 +24,7 @@ A structured, topic-by-topic FastAPI learning journey.
 
 | # | Folder | Topic | Status |
 |---|--------|-------|--------|
-| 6 | [`6_status_codes_errors`](./6_status_codes_errors/) | Status Codes, Custom Responses, Exception Handling | ⬜ Pending |
+| 6 | [`6_status_codes_errors`](./6_status_codes_errors/) | Status Codes, Custom Responses, Exception Handling | ✅ Done |
 | 7 | [`7_dependency_injection`](./7_dependency_injection/) | Dependency Injection & Reusable Logic | ⬜ Pending |
 | 8 | [`8_middleware`](./8_middleware/) | Middleware | ⬜ Pending |
 | 9 | [`9_database_sqlalchemy`](./9_database_sqlalchemy/) | DB Integration, SQLAlchemy ORM | ⬜ Pending |
@@ -60,7 +60,7 @@ FastAPI/
 ├── 5_response_models/                 ✅ Response Models, Sensitive Data
 │
 │   ── Session 2: DB + Auth ──
-├── 6_status_codes_errors/             ⬜ Status Codes, Exception Handling
+├── 6_status_codes_errors/             ✅ Status Codes, Exception Handling
 ├── 7_dependency_injection/            ⬜ Dependency Injection
 ├── 8_middleware/                      ⬜ Middleware
 ├── 9_database_sqlalchemy/             ⬜ DB + SQLAlchemy ORM
