@@ -266,4 +266,32 @@ uvicorn main:app --reload
 
 ---
 
+## 🎯 Interview Questions
+
+**Q1. What is a request body and when do you use it?**
+> A request body is data sent by the client inside the HTTP request (not in the URL). You use it with `POST`, `PUT`, and `PATCH` requests — for example, when creating or updating a resource with multiple fields.
+
+**Q2. What is Pydantic and what role does it play in FastAPI?**
+> Pydantic is a Python data validation library. In FastAPI, you define request/response schemas as Pydantic `BaseModel` classes. FastAPI uses them to automatically validate incoming data, convert types, and generate Swagger documentation.
+
+**Q3. How does FastAPI know a function parameter is a request body?**
+> If a function parameter's type is a Pydantic `BaseModel` subclass, FastAPI automatically treats it as the request body. Simple types like `int` or `str` become path or query params.
+
+**Q4. What happens if required field is missing in the request body?**
+> FastAPI returns a `422 Unprocessable Entity` error with a detailed message specifying which field is missing. This validation happens automatically via Pydantic before your function even runs.
+
+**Q5. How do you make a field optional in a Pydantic model?**
+> Give it a default value. Use `field: Optional[str] = None` to allow `None`, or `field: str = "default"` for a specific default. Fields without defaults are required.
+
+**Q6. What is `Field()` in Pydantic and why use it?**
+> `Field()` adds extra validation and metadata to a model field. For example: `price: float = Field(gt=0)` ensures price is greater than 0. You can also add `min_length`, `max_length`, `le`, `ge`, and `description` for Swagger docs.
+
+**Q7. What are nested Pydantic models?**
+> A Pydantic model can use another Pydantic model as a field type. This allows you to represent complex structured data like a `User` that contains an `Address` object. FastAPI handles validation for all nested levels automatically.
+
+**Q8. Can you combine a request body with path and query parameters in one route?**
+> Yes. FastAPI distinguishes them automatically: path params match `{}` in the URL, query params are simple types not in the path, and the request body is a Pydantic model. All three can exist in a single route function.
+
+---
+
 *Part of the [FastAPI Learning Repository](https://github.com/tahatabassum/fastapi)*
