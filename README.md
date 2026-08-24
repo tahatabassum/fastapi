@@ -31,7 +31,7 @@ A structured, topic-by-topic FastAPI learning journey.
 | 10 | [`10_database_sqlalchemy`](./10_database_sqlalchemy/) | DB Integration, SQLAlchemy ORM | ✅ Done |
 | 11 | [`11_crud_with_db`](./11_crud_with_db/) | CRUD API with Database | ✅ Done |
 | 12 | [`12_async_await`](./12_async_await/) | Asynchronous Programming (Async/Await) | ✅ Done |
-| 13 | [`13_auth_jwt`](./13_auth_jwt/) | JWT Auth, OAuth2, Password Hashing | 🔄 In Progress |
+| 13 | [`13_auth_jwt`](./13_auth_jwt/) | JWT Auth, OAuth2, Password Hashing | ✅ Done |
 | 14 | [`14_file_uploads`](./14_file_uploads/) | File Uploads & Static Files | ⬜ Pending |
 
 ### 🚀 Session 3 — Production + Project
