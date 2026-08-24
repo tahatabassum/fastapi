@@ -22,3 +22,7 @@ Thumbs.db
 
 # Databases
 *.db
+
+# Uploaded Static Files
+static/
+**/static/*

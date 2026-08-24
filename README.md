@@ -32,7 +32,7 @@ A structured, topic-by-topic FastAPI learning journey.
 | 11 | [`11_crud_with_db`](./11_crud_with_db/) | CRUD API with Database | ✅ Done |
 | 12 | [`12_async_await`](./12_async_await/) | Asynchronous Programming (Async/Await) | ✅ Done |
 | 13 | [`13_auth_jwt`](./13_auth_jwt/) | JWT Auth, OAuth2, Password Hashing | ✅ Done |
-| 14 | [`14_file_uploads`](./14_file_uploads/) | File Uploads & Static Files | ⬜ Pending |
+| 14 | [`14_file_uploads`](./14_file_uploads/) | File Uploads & Static Files | ✅ Done |
 
 ### 🚀 Session 3 — Production + Project
 
@@ -69,7 +69,7 @@ FastAPI/
 ├── 11_crud_with_db/                   ✅ CRUD with Real Database
 ├── 12_async_await/                    ✅ Async/Await in FastAPI
 ├── 13_auth_jwt/                       ✅ JWT + OAuth2 + Password Hashing
-├── 14_file_uploads/                   ⬜ File Uploads & Static Files
+├── 14_file_uploads/                   ✅ File Uploads & Static Files
 │
 │   ── Session 3: Production + Project ──
 ├── 15_cors_env/                       ⬜ CORS + Environment Variables
