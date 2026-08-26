@@ -1,10 +1,4 @@
-# datetime: sets token expiry timestamps
-# timedelta: sets token lifetime duration
 from datetime import datetime, timedelta, timezone
-
-# Depends: dependency injection tool
-# HTTPException: returns HTTP error responses
-# status: holds HTTP status constants
 from fastapi import FastAPI, Depends, HTTPException, status
 
 # OAuth2PasswordBearer: finds bearer token in Authorization header
