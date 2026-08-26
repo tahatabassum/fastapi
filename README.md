@@ -38,7 +38,7 @@ A structured, topic-by-topic FastAPI learning journey.
 
 | # | Folder | Topic | Status |
 |---|--------|-------|---------|
-| 15 | [`15_cors_env`](./15_cors_env/) | CORS Handling & Environment Variables | ⬜ Pending |
+| 15 | [`15_cors_env`](./15_cors_env/) | CORS Handling & Environment Variables | ✅ Done |
 | 16 | [`16_testing_pytest`](./16_testing_pytest/) | API Testing with Pytest | ⬜ Pending |
 | 17 | [`17_third_party_webcrawling`](./17_third_party_webcrawling/) | Third-Party API Integration & Web Crawling | ⬜ Pending |
 | 18 | [`18_pagination_caching_ratelimit`](./18_pagination_caching_ratelimit/) | Pagination, Caching, Rate Limiting | ⬜ Pending |
@@ -72,7 +72,7 @@ FastAPI/
 ├── 14_file_uploads/                   ✅ File Uploads & Static Files
 │
 │   ── Session 3: Production + Project ──
-├── 15_cors_env/                       ⬜ CORS + Environment Variables
+├── 15_cors_env/                       ✅ CORS + Environment Variables
 ├── 16_testing_pytest/                 ⬜ API Testing with Pytest
 ├── 17_third_party_webcrawling/        ⬜ 3rd Party APIs + Web Crawling
 ├── 18_pagination_caching_ratelimit/   ⬜ Pagination, Caching, Rate Limiting
